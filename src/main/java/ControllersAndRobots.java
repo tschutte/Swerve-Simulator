@@ -1,4 +1,4 @@
-import RobotControllers.TankDrive;
+import RobotControllers.*;
 import interfaces.RobotController;
 
 import java.util.ArrayList;
@@ -43,6 +43,11 @@ public class ControllersAndRobots {
 
         // here is where you put new controllers to test
         // again, the top entry is the one that's enabled by default
+        controllers.put("Full Swerve", new FullSwerve());
+        controllers.put("Arcade Drive", new ArcadeDrive());
+        controllers.put("Traditional Swerve", new TraditionalSwerve());
+        controllers.put("Spin Drive", new SpinDrive());
         controllers.put("Tank Drive", new TankDrive());
+
     }
 }
